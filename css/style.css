@@ -1,0 +1,190 @@
+body{
+  background-color: black;
+}
+/* 
+.landing-container {
+    background-image: url(https://1101993670.rsc.cdn77.org/Mysa/Assets/landing-banner.webp);
+    background-size: contain;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+} */
+.navbar{
+    position: relative;
+    z-index: 999;
+    padding: 40px 60px 20px 60px ;
+}
+
+.navbar-content {
+  width: 100%;
+}
+
+.scrolled{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    transition: top .3s ease-in-out, box-shadow .3s;
+    z-index: 999;
+    padding: 1rem 3rem !important;
+}
+
+.scrolled.logo{
+    height: 40px !important;
+}
+
+.scrolled-navbar {
+  display: none;
+  transition: all 0.3s ease;
+  padding: 5px 20px; 
+}
+
+.original-navbar {
+  transition: all 0.3s ease;
+  padding: 20px 48px;
+}
+
+#logo {
+  height: 121.18px;
+  transition: all 0.3s ease;
+}
+
+/* logo on small screens */
+@media (max-width: 576px) {  
+  #logo {
+    height: 35px; 
+  }
+  .login-btn {
+    padding: 6px 14px;   
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+    .login-btn {
+    width:86.21px;
+    height: 38.4px;
+    font-size: 10px;
+  }
+}
+
+
+.btn{
+  background-color: black;
+color :white;
+border: 2px solid rgb(82, 82, 82);
+border-radius: 50px;
+font-weight: 500;
+font-size: 20px;
+padding: .65rem 1.75rem;
+}
+
+.btn:hover{
+  color: #22d3ee;
+}
+
+
+
+
+.hero-section {
+ margin:0px 56.4px;
+ padding: 0px 48px 32px;
+}
+
+.background-dots .dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(139, 92, 246);
+  box-shadow: 0 0 10px rgb(139, 92, 246);
+  
+  animation: blink 4s infinite; /* slower blinking */
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+
+.hero-right{
+  background-image: url(assets/landing-banner.webp);
+  z-index: 1;
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.content {
+  z-index: 1; 
+}
+
+@media (max-width: 768px) {
+  .background-dots .dot {
+    width: 3px;
+    height: 3px;
+  }
+}
+
+.hero-left.h1 {
+  font-size: 68px;
+  
+}
+
+.video {
+  width: 561.36px;
+  height: 288.88px;
+  border-radius: 16px;
+}
+
+.gradient-btn {
+  width:250px;
+  height:55.2px;
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #2ecc71, #1e90ff);
+  cursor: pointer;
+  box-shadow: 0 8px 20px linear-gradient(90deg, #2ecc71, #1e90ff);
+  transform-style: preserve-3d;
+  animation: popOut 2s infinite;
+}
+
+
+@keyframes popOut {
+  0% {
+    transform: perspective(800px) scale(1);
+  }
+  50% {
+    transform: perspective(800px) scale(1.08) translateZ(30px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  }
+  100% {
+    transform: perspective(800px) scale(1);
+  }
+}
+
+.fs-58 {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .fs-58 {
+    font-size: 58px; 
+  }
+}
+
+.ai-container{
+  padding:60px 80px;
+}
+
+
+
+
+
+

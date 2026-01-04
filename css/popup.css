@@ -1,0 +1,104 @@
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup Box */
+.popup-box {
+  width: 380px;
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle at top,
+    #0f3c4c,
+    #020b10
+  );
+  border: 1px solid rgba(0, 255, 200, 0.4);
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Close */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Logo */
+.popup-logo img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.popup-title {
+  font-size: 22px;
+  background: linear-gradient(90deg, #2bd47d, #2b8df7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+
+/* Label */
+.popup-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Input */
+.mobile-input {
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.country-code {
+  margin-right: 12px;
+  opacity: 0.8;
+}
+
+.mobile-input input {
+  background: none;
+  border-left:1px solid grey;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+/* Note */
+.popup-note {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 12px 0 24px;
+}
+
+/* Submit */
+.popup-submit {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #25d366, #1e90ff);
+  color: white;
+  cursor: pointer;
+}
