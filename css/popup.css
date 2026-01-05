@@ -46,7 +46,7 @@
 .popup-title {
   font-size: 22px;
   background: linear-gradient(90deg, #2bd47d, #2b8df7);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 24px;
 }
