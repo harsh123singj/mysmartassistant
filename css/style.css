@@ -1,8 +1,7 @@
-
-
 body {
   font-family: Funnel Sans, sans-serif;
   max-width: 100%;
+  overflow-x: hidden;
   background-color: black;
   color: white;
 }
@@ -77,7 +76,27 @@ body {
     width: 250px;
     height: auto;
   }
+
+  .mysa-shadow {
+    width: 300px;
+    height: auto;
+  }
+
+  .mysa-h1 {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .mysa-p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
 }
+
 
 .bottom-fade {
   position: absolute;
@@ -233,4 +252,216 @@ body {
 
 .ai-container {
   padding: 60px 80px;
+}
+
+.hero-bg {
+  height: auto;
+  min-height: auto;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 0% 0%, rgba(0, 102, 255, 0.55), transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(170, 0, 255, 0.55), transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1) 70%),
+    #000;
+}
+
+/* REDUCED OVERLAY (important) */
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+/* CONTENT ABOVE */
+.hero-bg .row {
+  position: relative;
+  z-index: 2;
+}
+
+
+.footer-bg {
+  color: grey;
+}
+
+/* Social icons */
+.social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.list-unstyled>li>a:hover {
+  color: white !important;
+}
+
+.testimonials-section {
+  background-color: #000;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CONTAINER WRAPPER */
+.testimonial-container-wrapper {
+  position: relative;
+  max-width: 1400px;
+  /* Wide container */
+  margin: 0 auto;
+  padding: 0 0;
+  /* Remove padding so cards touch edges */
+}
+
+/* GRADIENT TEXT */
+.text-gradient-green {
+  background: linear-gradient(90deg, #2ecc71 0%, #2bd9d9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SLIDER WINDOW */
+.testimonial-slider-window {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 0 10px;
+  /* Slight buffer for shadow */
+}
+
+/* TRACK */
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  gap: 20px;
+}
+
+/* CARD STYLING */
+.testimonial-card {
+  flex: 0 0 calc(33.333% - 14px);
+  /* 3 cards per row */
+  background: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #2ecc71;
+  border-radius: 20px;
+  padding: 30px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BACKGROUND WATERMARK "S" */
+.testimonial-card::before {
+  content: "S";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.03);
+  font-family: serif;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.review-text {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2ecc71;
+
+}
+
+/* NAVIGATION BUTTONS - SMALLER & OVERLAYING */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  /* Smaller Size */
+  height: 40px;
+  /* Smaller Size */
+  background-color: rgba(13, 70, 66, 0.9);
+  /* Dark Teal with slight transparency */
+  border: 1px solid #2ecc71;
+  border-radius: 50%;
+  color: white;
+  z-index: 1000;
+  /* Above cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.slider-nav svg {
+  width: 20px;
+  /* Smaller Icon */
+  height: 20px;
+}
+
+.slider-nav:hover {
+  background-color: #2ecc71;
+  color: #000;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Position exactly on the edges/overlapping */
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+  .testimonial-card {
+    flex: 0 0 100%;
+  }
+
+  .slider-nav {
+    width: 35px;
+    height: 35px;
+    /* Even smaller on mobile */
+  }
+
+  .prev-btn {
+    left: 5px;
+  }
+
+  .next-btn {
+    right: 5px;
+  }
 }

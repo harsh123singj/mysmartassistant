@@ -1,0 +1,36 @@
+/* Background like screenshot */
+.privacy-bg {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(120, 0, 160, 0.25), transparent 40%),
+    radial-gradient(circle at 0% 20%, rgba(0, 100, 160, 0.2), transparent 35%),
+    #000;
+  min-height: 100vh;
+}
+
+/* Content spacing */
+.policy-content h5 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #9bd1ff;
+}
+
+.policy-content p,
+.policy-content li {
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Lists */
+.policy-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+  .policy-content p,
+  .policy-content li {
+    font-size: 0.9rem;
+  }
+}

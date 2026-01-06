@@ -1,0 +1,71 @@
+/* BACKGROUND */
+.contact-bg {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 150, 255, 0.15), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(160, 0, 255, 0.18), transparent 40%),
+    #000;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* STAR / DOT EFFECT */
+.contact-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(#2ecc71 1px, transparent 1px),
+    radial-gradient(#3498db 1px, transparent 1px),
+    radial-gradient(#9b59b6 1px, transparent 1px);
+  background-size: 120px 120px, 160px 160px, 200px 200px;
+  background-position: 0 0, 40px 60px, 80px 120px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* TEXT */
+.contact-bg p {
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+
+/* SECTION HEADINGS */
+.section-title {
+  color: #9bd1ff;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* LINKS */
+.contact-link {
+  color: #6ea8ff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* DIVIDER */
+.divider {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* FOOTER LINKS */
+.footer-link {
+  color: #6ea8ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
