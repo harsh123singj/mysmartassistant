@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <title>My Smart Assistant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="assests/favicon.ico">
+  <link rel="icon" type="image/png" href="assests/images/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="assests/css/popup.css">
 
 
 </head>
@@ -263,7 +263,7 @@
       </div>
       <nav class="navbar background-color-transparent original-navbar">
         <div class="navbar-content mx-md-2 d-flex justify-content-between align-items-center flex-nowrap">
-          <a> <img id="logo" class="img-fluid" src="assests/MysaIconHome.webp" alt="My Smart Assistant Logo">
+          <a> <img id="logo" class="img-fluid" src="assests/images/MysaIconHome.webp" alt="My Smart Assistant Logo">
           </a>
           <button class="btn login-btn fw-semibold fs-6 bg-black rounded-5 py-2 px-4 gx-0"
             onclick="openPopup()">Login</button>
@@ -274,7 +274,7 @@
       <nav class="navbar scrolled  scrolled-navbar ">
         <div
           class="navbar-content bg-black d-flex justify-content-between align-items-center flex-nowrap d-none d-md-flex">
-          <a> <img id="logo" class="img-fluid logo" src="assests/MysaIconHome.webp" alt="MySmartAssistant"
+          <a> <img id="logo" class="img-fluid logo" src="assests/images/MysaIconHome.webp" alt="MySmartAssistant"
               style="height: 80px; transition: all 0.3s ease;">
           </a>
           <button class="gradient-btn py-2 px-4 fs-6 fw-normal text-white">
@@ -309,7 +309,7 @@
             <!-- RIGHT container -->
             <div class="col-lg-6 col-md-12 order-1 order-lg-2 justify-content-center d-flex hero-right">
               <div class=" video align-items-top d-flex h-100 position-relative overflow-hidden">
-                <video src="assests/Phone_image_main_page.mp4" class="ratio ratio-16x9"
+                <video src="assests/images/Phone_image_main_page.mp4" class="ratio ratio-16x9"
                   style="max-width:288.88px; margin:auto;" loop autoplay muted playsinline></video>
                 <div class="bottom-fade d-block d-md-none"></div>
               </div>
@@ -327,8 +327,8 @@
 
       <div class=" col-12 col-md-9 video-container">
 
-        <video src="assests/mainpagevid.mp4" class="ratio ratio-16x9" style="width: 100%; margin:auto; " controls
-          poster="assests/thumbnail.webp" id="mainVideo"></video>
+        <video src="assests/images/mainpagevid.mp4" class="ratio ratio-16x9" style="width: 100%; margin:auto; " controls
+          poster="assests/images/thumbnail.webp" id="mainVideo"></video>
 
       </div>
     </div>
@@ -340,7 +340,7 @@
 
 
         <div class="popup-logo">
-          <img src="assests/MysaFooterLogo.webp" alt="MySA">
+          <img src="assests/images/MysaFooterLogo.webp" alt="MySA">
         </div>
 
         <h2 class="popup-title">MySmartAssistant</h2>
@@ -603,19 +603,155 @@
           </div>
         </div>
         <div class=" ai-container col-12 d-flex justify-content-center align-items-center position-relative">
-          <img src="assests/ring.webp" class="img-fluid" style="width:620px;  max-width: 100%; " alt="Ring Image">
+          <img src="assests/images/ring.webp" class="img-fluid" style="width:620px;  max-width: 100%; " alt="Ring Image">
         </div>
       </div>
     </div>
 
+
+    <section class="faq-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class=" d-lg-flex justify-space-between">
+
+            <!-- Header -->
+            <div class=" col-12 col-lg-5 px-4 align-items-center">
+              <h2 class="fw-bold">Questions?<br>Let's clear things up.</h2>
+              <p class="text-secondary mt-2">
+                Yes, we understand—AI-powered solutions, business automation tools,
+                AI for marketing, AI for customer support... a lot of big words can get confusing.
+              </p>
+            </div>
+
+            <!-- FAQ LIST -->
+            <div id="faqList" class=" col-12 col-lg-7 px-4">
+
+              <!-- FAQ ITEM -->
+              <div class="faq-item">
+                <button class="faq-question">
+                  What is Mysa?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Mysa is an AI-powered Smart Assistant available directly on WhatsApp. It helps you set one-time and
+                    recurring reminders, integrates and sets Google/ Outlook meetings, manages documents, and gets quick
+                    answers to everyday questions, all through simple WhatsApp messages or voice notes. No app
+                    downloads, just chat naturally on WhatsApp..</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Mysa work?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Mysa works like chatting with a personal assistant on WhatsApp. You can message or send voice notes
+                    with things like:
+                    “Remind me to call Ritu at 6 PM”
+                    “Find my Documents”
+                    “Wake me up at 6 AM every day to go for a walk”
+                    “Fix my meeting with team every Monday at 11 AM for Project Update” and Mysa will take care of the
+                    rest using AI and your connected information.
+
+                    Mysa will also call you if you have not read the reminder on your WhatsApp after a few minutes of
+                    sending you the reminder. This service is available in India, Australia, Canada, Denmark, France,
+                    Germany, Ireland, Italy, New Zealand, Portugal, Spain, Sweden, United Kingdom, United States.</p>
+                </div>
+              </div>
+
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Do I need to install an app?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No. Mysa works entirely within WhatsApp. Just save our number and start chatting — it’s that
+                    simple..</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What can mysa help me with?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Mysa can:<br>
+                    📅 Set one-time or recurring reminders<br>
+                    📅 Set your Google, Outlook meetings and events, and remind you of all events on your calendars<br>
+                    📂 Store and retrieve your documents<br>
+                    🗣️ Notify you of important events like insurance expiry, etc.
+                    💬 Support multiple languages.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Is my data safe with mysa?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>YYes! Mysa is always active and available round the clock, whether you need a reminder, a quick
+                    fact, or help managing your day..</p>
+                </div>
+              </div>
+
+              <!-- HIDDEN FAQs -->
+              <div class="faq-item d-none">
+                <button class="faq-question">
+                  Is Mysa available 24/7?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes, Mysa works 24/7.</p>
+                </div>
+              </div>
+
+              <div class="faq-item d-none">
+                <button class="faq-question">
+                  Is my data safe with Mysa?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Your data is encrypted and securely stored.</p>
+                </div>
+              </div>
+
+              <div class="faq-item d-none">
+                <button class="faq-question">
+                  Is Mysa free to use?
+                  <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes, a free plan is available.</p>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <button id="loadMoreBtn" class="btn faq-load-btn px-4 py-2">
+                  Load More
+                </button>
+              </div>
+            </div>
+
+            <!-- LOAD MORE -->
+
+
+          </div>
+        </div>
+      </div>
+    </section>
     <div class=" container-fluid hero-bg">
       <div class="row ">
         <div class="col-12 fs-sm-2 d-flex justify-content-center my-5">
-          <img src="assests/MysaShadow.webp" alt="mysa shadow" class="img-fluid mysa-shadow">
+          <img src="assests/images/MysaShadow.webp" alt="mysa shadow" class="img-fluid mysa-shadow">
         </div>
         <div class="col-12 align-items-center d-flex flex-column mb-5">
-          <h1 class="h1 d-flex justify-content-center mysa-h1">Experience the future of personal <br>productivity —
-            powered by AI & <br> WhatsApp</h1>
+          <h1 class="h1 d-flex justify-content-center mysa-h1">Experience the future of personal </h1>
+          <h1 class="h1 d-flex justify-content-center mysa-h1">productivity —powered by AI & </h1>
+          <h1 class="h1 d-flex justify-content-center mysa-h1"> Whatsapp.</h1>
           <p class="d-flex justify-content-center py-3 mysa-p" style="color: grey;">Manage meetings, reminders and all
             your document content in one place</p>
           <button class="gradient-btn py-2 px-4 fs-6 fw-normal text-white">
@@ -865,41 +1001,45 @@
       </section>
     </section>
 
+
+
     <footer class="footer-bg text-secondary pt-5">
       <div class="container">
         <div class="row gy-4">
 
           <!-- LEFT -->
           <div class="col-lg-4 col-md-12 text-center">
-            <img src="assests/MysaFooterLogo.webp" alt="MySA" width="200" class="mb-3">
+            <img src="assests/images/MysaFooterLogo.webp" alt="MySA" width="200" class="mb-3">
             <p class="text-grey mt-3 mb-0">
               <i class="bi bi-send me-2"></i> support@mysmartassistant.ai
             </p>
           </div>
 
-          <!-- SUPPORT -->
-          <div class="col-lg-4 col-md-6 text-center text-lg-start">
-            <h6 class="fw-semibold mb-3 text-white">Support</h6>
-            <ul class="list-unstyled ">
-              <li class="mb-2"><a href="contact.html" class="text-decoration-none text-secondary">Contact Us</a></li>
-              <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Plans & Payment</a></li>
-              <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">FAQ</a></li>
-            </ul>
-          </div>
+          
+          <div class="footer-links d-flex justify-content-center gap-5 col-lg-8 col-md-12">
+            <div class="col-lg-4 col-md-6 px-5 text-start">
+              <h6 class="fw-semibold mb-3 text-white">Support</h6>
+              <ul class="list-unstyled ">
+                <li class="mb-2"><a href="assests/html/contact.html" class="text-decoration-none text-secondary">Contact Us</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Plans & Payment</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">FAQ</a></li>
+              </ul>
+            </div>
 
-          <!-- LEGAL -->
-          <div class="col-lg-4 col-md-6 text-center text-lg-start">
-            <h6 class="fw-semibold mb-3 text-white">Legal</h6>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="privacy_policy.html" class="text-decoration-none text-secondary">privacy
-                  policy</a></li>
-              <li class="mb-2"><a href="terms&condition.html" class="text-decoration-none text-secondary">Terms and
-                  conditions</a></li>
-              <li class="mb-2"><a href="cancellation.html" class="text-decoration-none text-secondary">Cancellation and
-                  Refund Policy</a></li>
-            </ul>
+            
+            <div class="col-lg-4 col-md-6  text-start">
+              <h6 class="fw-semibold mb-3 text-white">Legal</h6>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="assests/html/privacy_policy.html" class="text-decoration-none text-secondary">privacy
+                    policy</a></li>
+                <li class="mb-2"><a href="assests/html/terms&condition.html" class="text-decoration-none text-secondary">Terms and
+                    conditions</a></li>
+                <li class="mb-2"><a href="assests/html/cancellation.html" class="text-decoration-none text-secondary">Cancellation
+                    and
+                    Refund Policy</a></li>
+              </ul>
+            </div>
           </div>
-
         </div>
 
         <!-- DIVIDER -->
@@ -907,13 +1047,13 @@
 
         <!-- SOCIAL ICONS -->
         <div class="d-flex justify-content-center gap-4 mb-4">
-          <a href="https://www.facebook.com/mysmartassistantapp" class="social-icon"><img src="assests/FB.webp"
+          <a href="https://www.facebook.com/mysmartassistantapp" class="social-icon"><img src="assests/images/FB.webp"
               width="32" height="32"></a>
-          <a href="https://www.instagram.com/mysmartassistantapp" class="social-icon"><img src="assests/Insta.webp"
+          <a href="https://www.instagram.com/mysmartassistantapp" class="social-icon"><img src="assests/images/Insta.webp"
               width="32" height="32"></a>
           <a href="https://www.linkedin.com/company/mysmartassistantapp" class="social-icon"><img
-              src="assests/Linkedin.webp" width="32" height="32"></a>
-          <a href="https://twitter.com/mysmartassistantapp" class="social-icon"><img src="assests/X.webp" width="32"
+              src="assests/images/Linkedin.webp" width="32" height="32"></a>
+          <a href="https://twitter.com/mysmartassistantapp" class="social-icon"><img src="assests/images/X.webp" width="32"
               height="32"></a>
         </div>
 
@@ -930,8 +1070,8 @@
   </div>
 
 
-  <script src="js/main.js"></script>
-  <script src="js/popup.js"></script>
+  <script src="assests/js/main.js"></script>
+  <script src="assests/js/popup.js"></script>
 </body>
 
 

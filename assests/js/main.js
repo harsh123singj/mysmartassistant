@@ -114,3 +114,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Pricing (Default: Yearly)
     switchPricing('yearly');
 });
+
+
+  // FAQ toggle
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector(".faq-answer");
+
+      item.classList.toggle("active");
+
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+  // Load more
+  document.getElementById("loadMoreBtn").addEventListener("click", function () {
+    document.querySelectorAll(".faq-item.d-none").forEach(item => {
+      item.classList.remove("d-none");
+    });
+    this.style.display = "none";
+  });
